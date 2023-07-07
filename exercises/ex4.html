@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Exercise 4: Responsive Design</title>
         <meta name="description" content="">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="../images/logo_ywca_32by32.png">
         <link rel="stylesheet" href="../styles/index.css">
     </head>
@@ -38,14 +38,21 @@
                 picture elements. You should use arches-np with a max-width of 1500px, angels-landing for a max-width of 1200px, and 
                 grand-teton with a max-width of 500. Be sure to resize the screen to see the images change.
             </p>
-            <p id="q6">
+            <p id="q6" style="font-size: 5vw;">
                 Static units can be inconvenient since we do not create websites for a single size of screen. We can use <i>viewport</i>
                 units to make sure that our text will scale with our viewport's size. You can change the font-size of any element using
                 the style attribute. Change paragraph's font-size to 5vw. Then resize the page and watch what happens to the text.
             </p>
         </section>
         <section id="answers" class="container">
-            
+            <img src="../images/arches-np.jpg" alt="Arches National Park" width="100%" height="100%">
+            <img src="../images/great-sand-dunes.jpg" alt="great-sand-dunes" width="100%" style="max-width: 683px;">
+            <picture>
+                <source srcset="../images/arches-np.jpg" media="(max-width:1500px)">
+                <source srcset="../images/angels-landing.jpg" media="(max-width:1200px)">
+                <source srcset="../images/grand-teton.jpg" media="(max-width:500px)">
+                <img src="../images/yosemite-valley.JPG" alt="Yosemite" height="100%" width="100%">
+            </picture>
         </section>
         <script src="" async defer></script>
     </body>
